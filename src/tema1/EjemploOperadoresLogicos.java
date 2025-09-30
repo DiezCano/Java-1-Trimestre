@@ -23,8 +23,9 @@ public class EjemploOperadoresLogicos {
         System.out.println(resultado);
 
         //5. (precio1 <= precio2) || (descuento1 > 1) ) && (precio2 < 10)
-        resultado = (precio1 <= precio2) || (descuento > 1) && (precio2 < 10);
+        resultado = ((precio1 <= precio2) || (descuento > 1)) && (precio2 < 10);
         System.out.println(resultado);
+
 
 
 
