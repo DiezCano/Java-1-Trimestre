@@ -50,20 +50,13 @@ public class EjerciciosBucles9 {
 
         }
         if  (contadorRondasGC < contadorRondasGH) {
-            System.out.println("Gana Rondas Humerus");
+            System.out.println("Gana Rondas Humerus ");
         }
         else if (contadorRondasGC > contadorRondasGH) {
-            System.out.println("Gana Rondas Cubitus");
+            System.out.println("Gana Rondas Cubitus ");
         } else {
-            System.out.println("Empate");
+            System.out.println("Empate ");
         }
-
-
-
-
-
-
-
 
     }
 }
