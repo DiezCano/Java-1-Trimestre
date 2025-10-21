@@ -27,14 +27,7 @@ public class Bucles4Ejercicios {
             sumaH = tiradaH1 + tiradaH2;
             System.out.println("El resultado de Humerus " + sumaH);
 
-            if (contadorRondasGC < contadorRondasGH) {
-                System.out.println("Gana Rondas Humerus "); }
-           if (contadorRondasGC > contadorRondasGH) {
-               System.out.println("Gana Rondas Cubitus "); }
 
-            if (contadorRondasGC == contadorRondasGH) {
-                System.out.println("Empate tecnico ");
-            }
         }
     }
 }
