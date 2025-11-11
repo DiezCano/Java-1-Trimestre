@@ -1,34 +1,72 @@
 package Repaso;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EjercicioRepaso {
-    static void main() {
-         /*
-        Programa que lea por teclado una serie de números enteros hasta que
-        introduzca el -1 y obtenga su media. Deberá mostrarla por pantalla.
-         */
-
-        double media=0; // acumulado / numero de elementos
-        int numero=0, acumulador=0, contador=0;
+    public static void main(String[] args) {
+        //CALCULADORA
 
         Scanner sc = new Scanner(System.in);
+        int opcion = -1;
+        double num1 = 0, num2 = 0, resultado = 0;
 
-        while (numero != -1) {
-            System.out.println("Introduce número: ");
-            numero = Integer.parseInt(sc.nextLine());
+        do {
+            try {
+                System.out.println("Dime el primer número: (Ej.: 34.567)");
+                num1 = Double.parseDouble(sc.nextLine()); //Convertir String a Double
+                System.out.println("Dime el segundo número: ");
+                num2 = Double.parseDouble(sc.nextLine());
 
-            if (numero == -1) {
-                break;
+                System.out.println("OPERACIÓN A REALIZAR (1-5)");
+                System.out.println("1. Sumar");
+                System.out.println("2. Restar");
+                System.out.println("3. Multiplicar");
+                System.out.println("4. Dividir");
+                System.out.println("5. Salir");
+
+                opcion = Integer.parseInt(sc.nextLine());
+
+                switch (opcion) {
+                    case 1:
+                        resultado = num1 + num2;
+                        System.out.println("El resultado es: " + resultado);
+                        break;
+                    case 2:
+                        resultado = num1 - num2;
+                        System.out.println("El resultado es: " + resultado);
+                        break;
+                    case 3:
+                        resultado = num1 * num2;
+                        System.out.println("El resultado es: " + resultado);
+                        break;
+                    case 4:
+                        resultado = num1 / num2;
+                        System.out.println("El resultado es: " + resultado);
+                        break;
+                    case 5:
+                        System.out.println("Gracias por usar nuestro programa");
+                    default:
+                        System.out.println("Opción incorrecta");
+                }
+
+            } catch (NumberFormatException exc) {
+                sc = new Scanner(System.in); //Para volver a pedir datos
+                System.out.println("Escribe bien el número");
+                continue; //El bucle comienza de nuevo
+            } catch (InputMismatchException exc) {
+                sc = new Scanner(System.in); //Para volver a pedir datos
+                System.out.println("La operación debe ser un entero (1-5)");
+                continue; //El bucle comienza de nuevo
+            } catch (Exception exc) {
+                sc = new Scanner(System.in); //Para volver a pedir datos
+                System.out.println(exc);
+                continue; //El bucle comienza de nuevo
             }
 
-            acumulador += numero;
-            contador++;
-
+        } while (opcion != 5);
+        {
 
         }
-
-        media = (double) acumulador / contador;
-        System.out.println("La media es: " + media);
     }
 }
