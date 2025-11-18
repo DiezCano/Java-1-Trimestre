@@ -27,7 +27,7 @@ public class EjercicioDeLaOca {
 
             for  (int i=0; i< jugadores.length; i++) {
                 System.out.println("Jugador " + (i+1) + ":" + jugadores[i]);
-                tirada = tirada();
+                tirada = tirada ();
                 System.out.println("Tirada: " + tirada);
             }
 
@@ -63,11 +63,6 @@ public class EjercicioDeLaOca {
             }
 
         }
-
-
-
-        System.out.println("OCA");
-
     }
 
 }
