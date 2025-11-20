@@ -1,4 +1,4 @@
-package Tema3.Ejercicios;
+package Tema3.Matrices;
 
 public class EjemploRellenarMatriz2 {
 

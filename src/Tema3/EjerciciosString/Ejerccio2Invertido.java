@@ -1,4 +1,4 @@
-package Tema3.Ejercicios;
+package Tema3.EjerciciosString;
 
 public class Ejerccio2Invertido {
     public static void main(String[] args) {

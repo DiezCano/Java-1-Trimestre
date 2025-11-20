@@ -1,4 +1,4 @@
-package Tema3.Ejercicios;
+package Tema3.EjerciciosString;
 
 public class Ejercicio3ListaSpotify {
     public static void main(String[] args) {
