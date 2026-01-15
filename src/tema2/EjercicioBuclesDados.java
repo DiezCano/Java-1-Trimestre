@@ -19,9 +19,9 @@ public class EjercicioBuclesDados {
         //   Necesito un contador=0 que sume uno cada vez que dado==20
 
         int contador = 0;
-        int dado = (int) (Math.random() * 50) + 1;
-        for (int i = 1; i < 50; i++) {
-            if (dado == 20) {
+        int dado = (int) (Math.random() * 200) + 1;
+        for (int i = 1; i < 200; i++) {
+            if (dado == 8) {
                 contador++;
             }
         }

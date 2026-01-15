@@ -89,7 +89,7 @@ public class Ejercicio3 {
         boolean todosHundidos = true;
         for(int i=0; i < tablero.length; i++) {
             for(int j=0; j < tablero[i].length; j++) {
-                if (tablero[i][j] == 'B') {
+                if (tablero[i][j] == 'M') {
                     todosHundidos = false;
                     break;
                 }
@@ -99,35 +99,6 @@ public class Ejercicio3 {
     }
 
     public static void main(String[] args) {
-
-        /**
-         * BATALLA NAVAL
-         *
-         * Inicialización:
-         * Crear un tablero de 8x8 (matriz de char ), inicialmente relleno de '~' (agua).
-         * Colocar aleatoriamente:
-         * 3 barcos pequeños de tamaño 2 (dos casillas consecutivas en horizontal o vertical)
-         * Los barcos estarán representados con ' B '
-         * No pueden superponerse ni salirse del tablero
-         *
-         * Juego:
-         * El jugador tiene 20 disparos para hundir todos los barcos
-         * En cada turno, el jugador introduce dos coordenadas (fila y columna)
-         * El programa responde:
-         * “¡TOCADO!” si hay barco en la celda (marca con ' X ')
-         * “Agua” si no hay barco (marca con ' O ')
-         * “Ya disparaste ahí” si esa casilla ya ha sido jugada
-         * Mostrar el tablero después de cada disparo (sin revelar los barcos no descubiertos)
-         *
-         * Finalización:
-         * Si se hunden todos los barcos: victoria
-         * Si se agotan los 20 disparos: derrota
-         */
-
-        /**
-         * Rellena el tablero con '~'
-         * @param tablero
-         */
 
         Scanner sc = new Scanner(System.in);
         int disparos = 20;
@@ -155,7 +126,7 @@ public class Ejercicio3 {
             }
 
             try {
-                if (tablero[dispFila][dispColumna] == 'B') {
+                if (tablero[dispFila][dispColumna] == 'M') {
                     System.out.println("TOCADO!");
                     tablero[dispFila][dispColumna] = 'X';
                 } else if (tablero[dispFila][dispColumna] == '~') {
