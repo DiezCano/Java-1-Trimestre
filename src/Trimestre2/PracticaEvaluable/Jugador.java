@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public abstract class Jugador {
 
-    private Integer id;
-    private String alias;
-    private int puntos;
+    protected Integer id;
+    protected String alias;
+    protected int puntos;
 
     public Jugador(int puntos, String alias, Integer id) {
         this.puntos = puntos;
@@ -65,7 +65,6 @@ public abstract class Jugador {
     }
 
     public abstract String imprimirRol();
-
 
     public void add(Jugador jugador) {
     }

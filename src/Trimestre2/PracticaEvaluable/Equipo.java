@@ -7,7 +7,6 @@ public class Equipo {
     private String Nombre;
     private String Pais;
     private static int TotalPuntos;
-
     private static ArrayList<Jugador> jugadores;
 
     public Equipo(String Nombre, String pais) {

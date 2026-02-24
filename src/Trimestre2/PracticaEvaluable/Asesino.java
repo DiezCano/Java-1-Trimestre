@@ -38,7 +38,7 @@ public class Asesino extends Jugador{
 
     @Override
     public String imprimirRol() {
-        return "Apoyo";
+        return "Asesino";
     }
 
 }
