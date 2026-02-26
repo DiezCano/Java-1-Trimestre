@@ -12,8 +12,5 @@ public class app {
         pilaNumerica.pintar();
         pilaNumerica.desapilar();
         pilaNumerica.pintar();
-
-
-
     }
 }
