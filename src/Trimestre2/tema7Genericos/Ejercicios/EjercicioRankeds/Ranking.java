@@ -8,8 +8,6 @@ public class Ranking {
 
     private Set<Jugador> jugadores;
     private TreeSet<Jugador> jugadoresOrdenados;
-    int posicion = 1;
-
 
     public Set<Jugador> getJugadores() {
         return jugadores;
@@ -30,9 +28,6 @@ public class Ranking {
             IO.println(jugador);
         }
     }
-
-
-
 
 
 
