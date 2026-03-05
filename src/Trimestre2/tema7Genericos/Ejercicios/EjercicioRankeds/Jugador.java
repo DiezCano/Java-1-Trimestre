@@ -10,7 +10,7 @@ public class Jugador implements Comparable<Jugador> {
     private int nivel;
     private String Pais;
 
-    public Jugador(String id, String nickname, int puntos, int nivel) {
+    public Jugador(String id, String nickname, int puntos) {
         this.id = id;
         this.nickname = nickname;
         this.puntos = 0;
