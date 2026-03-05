@@ -8,7 +8,7 @@ public class Participante extends Persona {
     private ArrayList<Voto> votosEmitidos;
 
 
-
-
-
+    public Participante(String apellido, String nombre, String email) {
+        super(apellido, nombre, email);
+    }
 }

@@ -4,10 +4,10 @@ public class Main {
     static void main() {
 
         Ranking ranking = new Ranking();
-        ranking.registrar(new Jugador("12","Felix",51));
+        ranking.registrar(new Jugador("1","Felix",51));
         ranking.registrar(new Jugador("2", "Ibai", 49));
         ranking.registrar(new Jugador("3", "YO", 21));
-        ranking.registrar(new Jugador("3", "YO", 50));
+
 
         ranking.pintarJugadores();
         ranking.modificarPuntuacion(1, 100);
