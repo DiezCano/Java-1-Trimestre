@@ -18,7 +18,6 @@ public class Gimnasio {
         actividades.put(a.getCodigo(), a);
     }
 
-    // RESERVAR
     public void reservarActividad(String dni, String cod) {
 
         Socio s = socios.get(dni);
@@ -48,7 +47,6 @@ public class Gimnasio {
         }
     }
 
-    // CANCELAR
     public void cancelarReserva(String dni, String cod) {
 
         Socio s = socios.get(dni);
@@ -66,7 +64,6 @@ public class Gimnasio {
         }
     }
 
-    // ACTIVIDADES DE UN SOCIO
     public TreeSet<Actividad> getActividadesSocio(String dni) {
 
         TreeSet<Actividad> lista = new TreeSet<>();
@@ -80,7 +77,6 @@ public class Gimnasio {
         return lista;
     }
 
-    // ACTIVIDADES LLENAS
     public List<Actividad> getActividadesLlenas() {
 
         List<Actividad> lista = new ArrayList<>();
@@ -105,7 +101,6 @@ public class Gimnasio {
         return lista;
     }
 
-    // RANKING
     public List<Socio> getRankingSocios() {
 
         List<Map.Entry<Socio, HashSet<Reserva>>> lista =
